@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 pipa() {
 for bb in telegraph do
-printf "Installing $a"
+#printf "Installing $a"
 pip3 uninstall $bb -y
 pip3 install $bb
 done
