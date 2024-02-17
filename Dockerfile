@@ -17,6 +17,6 @@ RUN pip3 install --no-cache-dir  -r requirements.txt
 RUN pip3 install --no-cache-dir -r re*/st*/op*.txt
 
 RUN ls
-
+RUN pip3 uninstall telegraph -y;pip3 install telegraph
 # start the bot.
 CMD ["bash", "startup"]
