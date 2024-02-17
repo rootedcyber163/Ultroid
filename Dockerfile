@@ -5,7 +5,8 @@
 
 FROM theteamultroid/ultroid:main
 
-WORKDIR /maruf
+WORKDIR ~
+RUN pwd
 # set timezone
 ENV TZ=Asia/Kolkata
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
