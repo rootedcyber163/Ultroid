@@ -5,14 +5,14 @@
 
 FROM theteamultroid/ultroid:main
 
+WORKDIR /maruf
 # set timezone
 ENV TZ=Asia/Kolkata
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 COPY . .
 
-# changing workdir
-WORKDIR "/root/TeamUltroid"
+RUN ls
 
 # start the bot.
 CMD ["bash", "startup"]
