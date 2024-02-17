@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-REPO="https://github.com/TeamUltroid/Ultroid.git"
+REPO="https://github.com/rootedcyber163/Ultroid"
 CURRENT_DIR="$(pwd)"
 ENV_FILE_PATH=".env"
-DIR="/root/TeamUltroid"
+DIR="~"
 
 while [ $# -gt 0 ]; do
     case "$1" in
