@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 pipa() {
-for bb in yt-dlp telegraph aiohttp python-decouple requests;do
+for bb in telegraph do
 printf "Installing $a"
 pip3 uninstall $bb -y
 pip3 install $bb
