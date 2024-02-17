@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
+pipa() {
+for bb in yt-dlp telegraph aiohttp python-decouple requests;do
+printf "Installing $a"
+pip3 uninstall $bb -y
+pip3 install $bb
+done
+}
+pipa
 # Ultroid - UserBot
 # Copyright (C) 2021-2023 TeamUltroid
 #
